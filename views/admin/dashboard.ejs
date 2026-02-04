@@ -1,0 +1,31 @@
+<div class="container mt-5">
+
+<h3>Admin Dashboard</h3>
+
+<a href="/admin/create" class="btn btn-warning mb-3">+ New Shipment</a>
+
+<table class="table table-bordered">
+
+<tr>
+<th>Tracking</th>
+<th>Sender</th>
+<th>Receiver</th>
+<th>Status</th>
+<th>Receipt</th>
+</tr>
+
+<% shipments.forEach(s => { %>
+<tr>
+<td><%= s.tracking %></td>
+<td><%= s.sender_name %></td>
+<td><%= s.receiver_name %></td>
+<td><%= s.status %></td>
+<td>
+<a href="/admin/receipt/<%= s.id %>" class="btn btn-dark btn-sm">Print</a>
+</td>
+</tr>
+<% }) %>
+
+</table>
+
+</div>

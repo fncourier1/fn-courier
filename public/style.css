@@ -1,0 +1,71 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+.navbar{
+  background:#ff6a00;
+  padding:15px;
+}
+
+.navbar a{
+  color:white !important;
+  font-weight:bold;
+}
+
+/* HERO */
+.hero{
+  background:#ff6a00;
+  color:white;
+  padding:120px 20px;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:55px;
+  font-weight:bold;
+}
+
+/* TRACK BOX */
+.track-box{
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+  max-width:500px;
+  margin:-40px auto 50px;
+}
+
+/* SERVICES */
+.services{
+  padding:60px 0;
+}
+
+.service-card{
+  padding:30px;
+  border-radius:10px;
+  background:#f7f7f7;
+  text-align:center;
+  transition:0.3s;
+}
+
+.service-card:hover{
+  transform:translateY(-5px);
+}
+
+/* ADS BANNER */
+.ads{
+  background:#222;
+  color:white;
+  padding:60px;
+  text-align:center;
+  font-size:28px;
+}
+
+/* FOOTER */
+.footer{
+  background:#111;
+  color:white;
+  padding:40px;
+  text-align:center;
+}

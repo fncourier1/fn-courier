@@ -1,0 +1,10 @@
+<h3>Track Parcel</h3>
+<form method="POST">
+<input name="tracking" class="form-control mb-3">
+</form>
+
+<% if(shipment){ %>
+<div class="card p-3">
+Status: <b><%= shipment.status %></b>
+</div>
+<% } %>

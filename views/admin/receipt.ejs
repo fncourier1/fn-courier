@@ -1,0 +1,38 @@
+<div class="container mt-5">
+
+<div style="border:2px solid #000;padding:20px">
+
+<h3>F&N Courier Receipt</h3>
+
+<p><b>Tracking:</b> <%= s.tracking %></p>
+
+<hr>
+
+<h5>Sender</h5>
+<p>
+<%= s.sender_name %><br>
+<%= s.sender_phone %><br>
+<%= s.sender_address %>
+</p>
+
+<h5>Receiver</h5>
+<p>
+<%= s.receiver_name %><br>
+<%= s.receiver_phone %><br>
+<%= s.receiver_address %>
+</p>
+
+<h5>Parcel</h5>
+<p>
+Description: <%= s.description %><br>
+Weight: <%= s.weight %> kg<br>
+Amount: RM <%= s.amount %>
+</p>
+
+<h4>Status: <%= s.status %></h4>
+
+<button onclick="window.print()" class="btn btn-dark">Print Slip</button>
+
+</div>
+
+</div>
